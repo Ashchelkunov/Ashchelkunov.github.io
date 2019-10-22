@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "less": "^3.10.3",
+    "parcel-bundler": "^1.12.4"
+  }
+}
