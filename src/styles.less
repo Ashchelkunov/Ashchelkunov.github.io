@@ -30,9 +30,6 @@
     font-weight: normal;
     font-style: normal;
 }
-html {
-    font-size: 10px;
-}
 
 .Mon-bold() {
     font-family: 'Montserrat_bold', sans-serif;
@@ -47,13 +44,21 @@ html {
     font-family: 'Roboto_bold', sans-serif;
 }
 
+html {
+    font-size: 10px;
+    font-family: 'Roboto_reg';
+    p {
+        .Rob-reg();
+    }
+}
 
 // section home
 .home {
         background: url(./img/home_background.png) no-repeat;
         background-size: cover;
         width: 100%;
-        height: 85rem;
+        height: 100vh;
+        min-height: 900px;
         color: #fff;
         &-main {
             &-header {
@@ -151,3 +156,180 @@ html {
         margin-bottom: 10rem;
     }
     }
+// секция о нас 
+.about {
+    background-color: #f8f8f8;
+    &-blocks {
+        p {
+            margin-bottom: 60px;
+            color: #606060;
+        }
+    }
+    &-header {
+        text-align: center;
+        margin-top: 100px;
+        h3 {
+            .Mon-reg();
+            color: #606060;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-weight: 800;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        h4 {
+            margin-top: 3rem;
+            margin-bottom: 71px;
+            color: #606060;
+        }
+    }
+}
+// слайдер
+
+.about {
+    padding-bottom: 99px;
+}
+
+.bx-wrapper {
+    position: relative;
+}
+
+ .bx-controls-direction a {
+    position: absolute;
+    top: 33%;
+    width: 36px;
+    height: 36px;
+}
+
+.bx-next {
+    right: 0px;
+    background: url(img/slider_img/click_right.png) center; 
+}
+
+.bx-prev {
+    left: 0px;
+    background: url(img/slider_img/click_left.png) center;
+}
+
+.slider {
+    text-align: center;
+    h4 {
+        .Rob-reg();
+        font-weight: 550;
+        color: #606060;
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+}
+// works
+.works-header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 74px;
+    h3 {
+        .Mon-reg();
+        color: #606060;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-weight: 800;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    li {
+        display: inline;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            .Mon-reg();
+            padding: 1rem;
+            font-size: 1.5rem;
+            color: #606060;
+        }
+        a:active {
+            color: red;
+        }
+    }
+}
+
+
+
+.photo {
+    img {
+        position: relative;
+        right: 15px;
+    }
+    width: 360px;
+    height: 320px;
+    background-color: rgb(192, 48, 28);
+margin: 15px;
+}
+.photo img:hover {
+    opacity: 0.5;
+}
+
+.works {
+    margin-bottom: 100px;
+}
+
+// параллакс
+.parall {
+    background: url(img/parallax/Layer29.png) no-repeat;
+    background-size:  cover;
+    height: 368px;
+}
+.your-project {
+    text-align: center;
+    color: #f8f8f8;
+    h1 {
+        margin-top: 100px;
+        margin-bottom: 55px;
+        .Rob-reg(); 
+    }
+}
+
+// блог
+.blogs {
+    &-one {
+        margin-bottom: 78px;
+    }
+    &-two {
+        padding-bottom: 100px;
+    }
+}
+
+
+.blog-header {
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        .Rob-bold();
+        color: #777777;
+    }
+    img {
+        position: absolute;
+        margin-bottom: 37px;
+    }
+    
+    .header {
+        text-align: center;
+    }
+}
+.blog-header:hover {
+    h4 {
+        color: #c0301c;
+    }
+    a {
+        color: #c0301c;
+    }
+    span {
+        color: #c0301c;
+    }
+}
+
+.contant {
+    margin-top: 30px;
+    margin-bottom: 37px;
+    .Rob-reg()
+}
+
+
