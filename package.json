@@ -8,7 +8,9 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "autoprefixer": "^9.7.0",
     "bxslider": "^4.2.14",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "postcss-modules": "^1.4.1"
   }
 }

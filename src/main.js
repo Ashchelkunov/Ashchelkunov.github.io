@@ -11,6 +11,17 @@ $(document).ready(function(){
     pager: false,
     nextText: '',
     prevText: '',
+    infiniteLoop: false,
+    responsive: true,
   });
 });
-
+import "bxslider/dist/jquery.bxslider"
+$(document).ready(function(){
+  $('.slider-review').bxSlider({
+    maxSlides: 1,
+    nextText: '',
+    prevText: '',
+    pager: true,
+    controls: false,
+  })
+})
