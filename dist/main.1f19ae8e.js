@@ -10980,26 +10980,7 @@ digital_btn.onclick = function () {
 film_btn.onclick = function () {
   digital.style.display = 'none';
   film.style.display = 'block';
-}; // var btn_prev = document.querySelector('.slider .button .prev');
-// var btn_next = document.querySelector('.slider .button .next');
-// var images = document.querySelectorAll('.slider .photos img');
-// var i = 0;
-// btn_prev.onclick = function() {
-//   images[i].style.display = 'none';
-//   i--;
-//   if (i < 0) {
-//     i = images.length - 1;
-//   }
-//   images[i].style.display = 'block';
-// }
-// btn_next.onclick = function() {
-//   images[i].style.display = 'none';
-//   i++;
-//   if (i >= images.length) {
-//     i = 0;
-//   }
-//   images[i].style.display = 'block';
-// }
+};
 },{"jquery":"../node_modules/jquery/dist/jquery.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
