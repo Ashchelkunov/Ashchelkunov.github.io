@@ -29,10 +29,16 @@ body li {
   list-style-type: none;
 }
 body a,
-body h4 {
+body h4,
+body button {
   font-family: 'Roboto_reg', sans-serif;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  border: none;
+  background: transparent;
+}
+body button {
+  font-size: 17px;
 }
 body a:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -77,11 +83,11 @@ body a:focus {
   width: 800px;
   margin: 10px auto;
 }
-.slider .photos img {
+.slider img {
   width: 800px;
   display: none;
 }
-.slider .photos img:first-child {
+.slider img:first-child {
   display: block;
 }
 .checkbox {
@@ -152,6 +158,9 @@ body a:focus {
   display: flex;
   justify-content: center;
 }
+.film {
+  display: none;
+}
 .gallery {
   margin: 20px;
 }
@@ -166,13 +175,10 @@ body a:focus {
 .gallery a {
   text-align: center;
 }
-.tab-content {
-  height: 100%;
-  min-height: 700px;
-}
 .footer {
   border-top: 0.5px solid #c8c8c8;
   min-height: 20px;
+  max-height: 30px;
 }
 .contatcs {
   display: none;

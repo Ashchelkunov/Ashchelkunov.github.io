@@ -63,10 +63,15 @@
      li {
         list-style-type: none;
      }
-    a, h4 {
+    a, h4, button {
         .Rob-reg();
         color: rgba(0, 0, 0, 0.5);
         text-decoration: none;
+        border: none;
+        background: transparent;
+        }
+    button {
+        font-size: 17px;
     }
     a:hover {
         color: rgba(0, 0, 0, 0.5);
@@ -80,7 +85,6 @@
     // background: url(img/fon.png);
     // height: 100%;
  }
-
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -128,16 +132,13 @@
     // border: 1px solid #c8c8c8;
     // max-width: 120vh;
     // max-height: 70vh;
-    .photos{
         img {
             width: 800px;
             display: none;
         }
         img:first-child {
             display: block;
-        }
-    }
-    
+        }   
 }
 
 
@@ -228,6 +229,9 @@
     display: flex;
     justify-content: center;
 }
+.film {
+    display: none;
+}
 .gallery {
     // display: flex;
     // flex-flow: row wrap;
@@ -250,18 +254,11 @@
 } 
 
 
-.tab-content {
-    height: 100%;
-    min-height: 700px;
-}
-
-
-
 .footer {
     border-top: 0.5px solid #c8c8c8;
     // height: 100%;
     min-height: 20px;
-    // max-height: 30px;
+    max-height: 30px;
     
 }
 

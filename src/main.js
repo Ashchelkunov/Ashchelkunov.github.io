@@ -28,8 +28,21 @@ function slide() {
 }
 nextSlide ();
 
+// tabs
+var digital_btn = document.querySelector('.digital_btn');
+var film_btn = document.querySelector('.film_btn');
 
+var digital = document.querySelector('.digital');
+var film = document.querySelector('.film');
 
+digital_btn.onclick = function() {
+  film.style.display = 'none';
+  digital.style.display = 'block';
+};
+film_btn.onclick = function() {
+  digital.style.display = 'none';
+  film.style.display = 'block';
+};
 
 
 
