@@ -11,7 +11,7 @@ $(document).ready(function(){
 });
 
 // Slider
-var images = document.querySelectorAll('.slider .photos img');
+var images = document.querySelectorAll('.slider img');
 var i = 0;
 
 function nextSlide () {
