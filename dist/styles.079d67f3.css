@@ -74,10 +74,15 @@ body a:focus {
   justify-content: center;
 }
 .slider {
-  background-color: #fff;
-  margin: 10px;
-  max-width: 120vh;
-  max-height: 70vh;
+  width: 800px;
+  margin: 10px auto;
+}
+.slider .photos img {
+  width: 800px;
+  display: none;
+}
+.slider .photos img:first-child {
+  display: block;
 }
 .checkbox {
   display: none;
@@ -148,7 +153,7 @@ body a:focus {
   justify-content: center;
 }
 .gallery {
-  margin-top: 20px;
+  margin: 20px;
 }
 .gallery img {
   max-width: 250px;
