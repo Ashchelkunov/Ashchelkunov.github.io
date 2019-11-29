@@ -10944,7 +10944,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   (0, _jquery.default)('.contatcs-close').on('click', function (event) {
     (0, _jquery.default)('.contatcs').fadeOut();
   });
-});
+}); // Slider
+
 var images = document.querySelectorAll('.slider .photos img');
 var i = 0;
 

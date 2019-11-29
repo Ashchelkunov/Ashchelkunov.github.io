@@ -10,7 +10,7 @@ $(document).ready(function(){
     })
 });
 
-
+// Slider
 var images = document.querySelectorAll('.slider .photos img');
 var i = 0;
 
