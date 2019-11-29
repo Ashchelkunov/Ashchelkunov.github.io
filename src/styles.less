@@ -72,6 +72,7 @@
         }
     button {
         font-size: 17px;
+        outline: none;
     }
     a:hover {
         color: rgba(0, 0, 0, 0.5);
@@ -92,7 +93,6 @@
     // border: 2px solid red;
     border-bottom: 0.5px solid #c8c8c8;
     .logo  {
-        // border: 2px solid green;
         h1 {
             .Rob-reg();
             font-size: 20px;
@@ -110,7 +110,6 @@
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
-    // border: 2px solid green;
     padding-top: 30px;
     padding-bottom: 5px;
     a {
@@ -122,16 +121,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    // border-bottom: 0.5px solid #c8c8c8;
 }
 
 .slider {
     width: 800px;
     margin: 10px auto;
-    // padding: 10px 50px 720px 50px;
-    // border: 1px solid #c8c8c8;
-    // max-width: 120vh;
-    // max-height: 70vh;
         img {
             width: 800px;
             display: none;
@@ -150,46 +144,11 @@
     display: none;
 }
 
-.gallery-nav {
-    .Rob-reg();
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 200px;
-    min-width: 100px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin: 0;
-    right: -200px;
-    padding: 15px 20px;
-    -webkit-transition: right 0.3s;
-    -moz-transition: right 0.3s;
-    transition: right 0.3s;
-    background: rgba(255, 255, 255, 0.87);
-    z-index: 10;
-    .title {
-        margin-top: 80px;
-        li {
-            margin-top: 30px;
-        }
-        img {
-            width: 100px;
-        }
-    }
-}
-
-
-/**
- * Кнопка переключения панели
-
- */
-
  .nav-toggle {
+     display: none;
     position: absolute;
     right: 210px;
-    top: 4em;
+    top: 4.5em;
     padding: 0.5em;
     background: inherit;
     color: #dadada;
@@ -225,38 +184,45 @@
 
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.digital, .film {
+.content {
     display: flex;
-    justify-content: center;
 }
-.film {
-    display: none;
-}
+
 .gallery {
+    max-width: 80vw; 
     // display: flex;
     // flex-flow: row wrap;
     // justify-content: center;
     // border: 2px solid green;
-    margin: 20px;
-    // max-width: 1600px; 
+    margin-top: 20px; 
     img {
-        // width: 100%;
-        max-width: 250px;
-        margin-top: 1px;
-        margin-left: 1px;
+        width: 100%;
+        height: auto;
     }
     img:hover {
         opacity: 0.9;
     }
     a {
         text-align: center;
-    }   
+        flex: auto;
+        margin: 1px;
+    }  
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
 } 
+
+.film {
+    display: none;
+}
+
+
+
+
 
 
 .footer {
     border-top: 0.5px solid #c8c8c8;
-    // height: 100%;
     min-height: 20px;
     max-height: 30px;
     
@@ -315,17 +281,41 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .gallery {
-        img {
-            // width: 300px;
-            max-width: 350px;
-            margin-top: 3px;
+@media screen and (max-width: 1256px) {
+    .nav-toggle {
+        display: block;
+    }
+    .gallery{
+        max-width: 100vw;
+    }
+    .gallery-nav {
+        .Rob-reg();
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        width: 200px;
+        min-width: 100px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        right: -200px;
+        -webkit-transition: right 0.3s;
+        -moz-transition: right 0.3s;
+        transition: right 0.3s;
+        background: rgba(255, 255, 255, 0.87);
+        z-index: 10;
+        .title {
+            margin-top: 80px;
+            li {
+                margin-top: 30px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 432px) {
+@media screen and (max-width: 447px) {
     .nav-toggle {
         top: 8em;
     }
@@ -335,7 +325,7 @@
         top: 8em;
     }
 }
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 326px) {
     .nav-toggle {
         top: 10em;
     }

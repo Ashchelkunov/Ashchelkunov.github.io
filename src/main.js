@@ -37,11 +37,11 @@ var film = document.querySelector('.film');
 
 digital_btn.onclick = function() {
   film.style.display = 'none';
-  digital.style.display = 'block';
+  digital.style.display = 'flex';
 };
 film_btn.onclick = function() {
   digital.style.display = 'none';
-  film.style.display = 'block';
+  film.style.display = 'flex';
 };
 
 

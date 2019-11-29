@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./fonts\\Montserrat-Bold.woff2":[["Montserrat-Bold.71aa32d1.woff2","fonts/Montserrat-Bold.woff2"],"fonts/Montserrat-Bold.woff2"],"./fonts\\Montserrat-Bold.woff":[["Montserrat-Bold.73e94c2c.woff","fonts/Montserrat-Bold.woff"],"fonts/Montserrat-Bold.woff"],"./fonts\\RobotoSlab-Regular.woff2":[["RobotoSlab-Regular.bde5b88e.woff2","fonts/RobotoSlab-Regular.woff2"],"fonts/RobotoSlab-Regular.woff2"],"./fonts\\RobotoSlab-Regular.woff":[["RobotoSlab-Regular.147fb9a9.woff","fonts/RobotoSlab-Regular.woff"],"fonts/RobotoSlab-Regular.woff"],"./fonts\\RobotoSlab-Bold.woff2":[["RobotoSlab-Bold.38baec92.woff2","fonts/RobotoSlab-Bold.woff2"],"fonts/RobotoSlab-Bold.woff2"],"./fonts\\RobotoSlab-Bold.woff":[["RobotoSlab-Bold.4bdf4f09.woff","fonts/RobotoSlab-Bold.woff"],"fonts/RobotoSlab-Bold.woff"],"./fonts\\Montserrat-Regular.woff2":[["Montserrat-Regular.6f086254.woff2","fonts/Montserrat-Regular.woff2"],"fonts/Montserrat-Regular.woff2"],"./fonts\\Montserrat-Regular.woff":[["Montserrat-Regular.1b35f2ae.woff","fonts/Montserrat-Regular.woff"],"fonts/Montserrat-Regular.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./fonts/Montserrat-Bold.woff2":[["Montserrat-Bold.71aa32d1.woff2","fonts/Montserrat-Bold.woff2"],"fonts/Montserrat-Bold.woff2"],"./fonts/Montserrat-Bold.woff":[["Montserrat-Bold.73e94c2c.woff","fonts/Montserrat-Bold.woff"],"fonts/Montserrat-Bold.woff"],"./fonts/RobotoSlab-Regular.woff2":[["RobotoSlab-Regular.bde5b88e.woff2","fonts/RobotoSlab-Regular.woff2"],"fonts/RobotoSlab-Regular.woff2"],"./fonts/RobotoSlab-Regular.woff":[["RobotoSlab-Regular.147fb9a9.woff","fonts/RobotoSlab-Regular.woff"],"fonts/RobotoSlab-Regular.woff"],"./fonts/RobotoSlab-Bold.woff2":[["RobotoSlab-Bold.38baec92.woff2","fonts/RobotoSlab-Bold.woff2"],"fonts/RobotoSlab-Bold.woff2"],"./fonts/RobotoSlab-Bold.woff":[["RobotoSlab-Bold.4bdf4f09.woff","fonts/RobotoSlab-Bold.woff"],"fonts/RobotoSlab-Bold.woff"],"./fonts/Montserrat-Regular.woff2":[["Montserrat-Regular.6f086254.woff2","fonts/Montserrat-Regular.woff2"],"fonts/Montserrat-Regular.woff2"],"./fonts/Montserrat-Regular.woff":[["Montserrat-Regular.1b35f2ae.woff","fonts/Montserrat-Regular.woff"],"fonts/Montserrat-Regular.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49653" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64761" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
