@@ -81,15 +81,16 @@ body a:focus {
   justify-content: center;
 }
 .slider {
-  width: 800px;
-  margin: 10px auto;
+  margin: 10px 15vw 10px 15vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 .slider img {
-  width: 800px;
+  width: 100%;
   display: none;
 }
 .slider img:first-child {
-  display: block;
+  display: flex;
 }
 .checkbox {
   display: none;
@@ -127,7 +128,7 @@ body a:focus {
 }
 .gallery {
   max-width: 80vw;
-  margin-top: 20px;
+  margin: 20px 5vw 0 5vw;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
@@ -237,8 +238,11 @@ body a:focus {
   }
 }
 @media screen and (max-width: 447px) {
-  .nav-toggle {
+  .nav-toggle .gallery-nav {
     top: 8em;
+  }
+  .slider {
+    margin: 10px 15vw 10px 15vw;
   }
   [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
     left: auto;

@@ -124,14 +124,17 @@
 }
 
 .slider {
-    width: 800px;
-    margin: 10px auto;
+    // width: 800px;
+    margin: 10px 15vw 10px 15vw;
+    display: flex;
+    flex-wrap: wrap;
         img {
-            width: 800px;
+            width: 100%;
+            // max-width: 800px;
             display: none;
         }
         img:first-child {
-            display: block;
+            display: flex;
         }   
 }
 
@@ -316,8 +319,12 @@
 }
 
 @media screen and (max-width: 447px) {
-    .nav-toggle {
+    .nav-toggle .gallery-nav {
         top: 8em;
+    }
+    .slider {
+        margin: 10px 15vw 10px 15vw;
+
     }
     [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
         left: auto;
