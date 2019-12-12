@@ -81,7 +81,7 @@ body a:focus {
   justify-content: center;
 }
 .slider {
-  margin: 10px 15vw 10px 15vw;
+  margin: 10px 10vw 10px 10vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -236,11 +236,11 @@ body a:focus {
   }
 }
 @media screen and (max-width: 447px) {
-  .nav-toggle .gallery-nav {
+  .nav-toggle {
     top: 8em;
   }
-  .slider {
-    margin: 10px 15vw 10px 15vw;
+  .gallery-nav .title {
+    margin-top: 150px;
   }
   [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
     left: auto;
@@ -250,11 +250,6 @@ body a:focus {
 }
 @media screen and (max-width: 326px) {
   .nav-toggle {
-    top: 10em;
-  }
-  [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
-    left: auto;
-    right: 10em;
     top: 10em;
   }
 }

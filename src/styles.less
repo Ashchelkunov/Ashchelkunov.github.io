@@ -125,7 +125,7 @@
 
 .slider {
     // width: 800px;
-    margin: 10px 15vw 10px 15vw;
+    margin: 10px 10vw 10px 10vw;
     display: flex;
     flex-wrap: wrap;
         img {
@@ -320,13 +320,14 @@
 }
 
 @media screen and (max-width: 447px) {
-    .nav-toggle .gallery-nav {
-        top: 8em;
+   .nav-toggle {
+       top: 8em;
+   }
+   .gallery-nav {
+    .title {
+        margin-top: 150px;
     }
-    .slider {
-        margin: 10px 15vw 10px 15vw;
-
-    }
+   }
     [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
         left: auto;
         right: 10px;
@@ -335,11 +336,6 @@
 }
 @media screen and (max-width: 326px) {
     .nav-toggle {
-        top: 10em;
-    }
-    [id='nav-toggle']:checked ~ .gallery-nav > .nav-toggle {
-        left: auto;
-        right: 10em;
         top: 10em;
     }
 }
