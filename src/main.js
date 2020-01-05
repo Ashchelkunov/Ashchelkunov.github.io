@@ -29,20 +29,24 @@ function slide() {
 nextSlide ();
 
 // tabs
-var digital_btn = document.querySelector('.digital_btn');
-var film_btn = document.querySelector('.film_btn');
+var digital_btn = document.querySelectorAll('.digital_btn');
+var film_btn = document.querySelectorAll('.film_btn');
 
 var digital = document.querySelector('.digital');
 var film = document.querySelector('.film');
 
-digital_btn.onclick = function() {
-  film.style.display = 'none';
-  digital.style.display = 'flex';
-};
-film_btn.onclick = function() {
-  digital.style.display = 'none';
-  film.style.display = 'flex';
-};
+digital_btn.forEach(btn => {
+  btn.onclick = () => {
+    film.style.display = 'none';
+    digital.style.display = 'flex';
+  }
+});
+film_btn.forEach(btn => {
+  btn.onclick = () => {
+    film.style.display = 'flex';
+    digital.style.display = 'none';
+  };
+});
 
 
 
